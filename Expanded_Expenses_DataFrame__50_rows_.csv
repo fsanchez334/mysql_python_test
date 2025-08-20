@@ -1,0 +1,51 @@
+date,amount,merchant,category,notes,subcategory,card_type,card_name
+2025-08-01,372.07,Delta Airlines,Shopping,Flight ticket,Wants,Credit,Amex Gold
+2025-08-02,48.03,Delta Airlines,Housing,Pharmacy purchase,Needs,Credit,Chase Freedom
+2025-08-03,120.17,Starbucks,Travel,Hotel booking,Wants,Credit,Bank of America Debit
+2025-08-04,212.66,Uber,Housing,Electronics,Needs,Debit,Discover It
+2025-08-05,350.58,Amazon,Food & Drink,Streaming service,Wants,Debit,Amex Gold
+2025-08-06,55.59,Uber,Utilities,Pharmacy purchase,Needs,Credit,Chase Sapphire
+2025-08-07,135.94,Walgreens,Savings,Monthly subscription,Savings,Debit,Bank of America Debit
+2025-08-08,44.01,Delta Airlines,Healthcare,Gas refill,Needs,Debit,Bank of America Debit
+2025-08-09,27.68,Uber,Groceries,Flight ticket,Needs,Debit,Chase Freedom
+2025-08-10,193.16,Lyft,Groceries,Electronics,Needs,Debit,Amex Gold
+2025-08-11,108.71,Walgreens,Utilities,Gas refill,Needs,Credit,Bank of America Debit
+2025-08-12,365.92,Target,Housing,Dinner,Needs,Debit,Wells Fargo Debit
+2025-08-13,113.71,Apple,Housing,Streaming service,Needs,Credit,Amex Gold
+2025-08-14,203.58,Walmart,Utilities,Groceries,Needs,Credit,Bank of America Debit
+2025-08-15,329.44,CVS,Travel,Pharmacy purchase,Wants,Debit,Amex Gold
+2025-08-16,127.08,Apple,Food & Drink,Home supplies,Wants,Debit,Citi Double Cash
+2025-08-17,449.42,Hulu,Healthcare,Pharmacy purchase,Needs,Debit,Amex Gold
+2025-08-18,249.29,McDonald's,Housing,Monthly subscription,Needs,Credit,Amex Gold
+2025-08-19,300.22,Target,Healthcare,Pharmacy purchase,Needs,Debit,Bank of America Debit
+2025-08-20,129.45,Shell,Housing,Home supplies,Needs,Credit,Citi Double Cash
+2025-08-21,376.68,Delta Airlines,Housing,Streaming service,Needs,Credit,Chase Sapphire
+2025-08-22,229.59,Home Depot,Food & Drink,Gas refill,Wants,Credit,Bank of America Debit
+2025-08-23,421.63,Delta Airlines,Entertainment,Home supplies,Wants,Credit,Amex Gold
+2025-08-24,271.99,Walgreens,Food & Drink,Home supplies,Wants,Credit,Bank of America Debit
+2025-08-25,14.64,CVS,Transport,Streaming service,Needs,Debit,Amex Gold
+2025-08-26,439.61,Walmart,Travel,Groceries,Wants,Credit,Citi Double Cash
+2025-08-27,489.1,Exxon,Groceries,Home supplies,Needs,Credit,Amex Gold
+2025-08-28,86.74,Exxon,Housing,Home supplies,Needs,Debit,Amex Gold
+2025-08-29,357.91,Netflix,Travel,Pharmacy purchase,Wants,Debit,Wells Fargo Debit
+2025-08-30,64.9,Airbnb,Transport,Flight ticket,Needs,Credit,Chase Sapphire
+2025-08-31,279.19,Amazon,Savings,Hotel booking,Savings,Credit,Chase Freedom
+2025-09-01,118.33,Starbucks,Shopping,Monthly subscription,Wants,Debit,Chase Freedom
+2025-09-02,142.85,Airbnb,Travel,Electronics,Wants,Credit,Bank of America Debit
+2025-09-03,290.22,McDonald's,Savings,Flight ticket,Savings,Debit,Discover It
+2025-09-04,51.69,Home Depot,Travel,Pharmacy purchase,Wants,Debit,Wells Fargo Debit
+2025-09-05,432.6,Home Depot,Transport,Monthly subscription,Needs,Credit,Chase Freedom
+2025-09-06,401.29,Costco,Utilities,Groceries,Needs,Credit,Amex Gold
+2025-09-07,227.06,Uber,Housing,Pharmacy purchase,Needs,Credit,Chase Sapphire
+2025-09-08,437.87,Shell,Travel,Groceries,Wants,Debit,Discover It
+2025-09-09,30.04,Netflix,Groceries,Home supplies,Needs,Credit,Chase Freedom
+2025-09-10,206.17,Lyft,Food & Drink,Electronics,Wants,Credit,Discover It
+2025-09-11,86.5,Costco,Shopping,Monthly subscription,Wants,Debit,Chase Sapphire
+2025-09-12,214.39,Shell,Entertainment,Home supplies,Wants,Debit,Amex Gold
+2025-09-13,112.76,Uber,Entertainment,Monthly subscription,Wants,Credit,Citi Double Cash
+2025-09-14,29.82,CVS,Shopping,Electronics,Wants,Credit,Chase Freedom
+2025-09-15,426.41,Airbnb,Groceries,Groceries,Needs,Credit,Citi Double Cash
+2025-09-16,64.34,Lyft,Healthcare,Hotel booking,Needs,Credit,Bank of America Debit
+2025-09-17,311.59,Spotify,Shopping,Pharmacy purchase,Wants,Debit,Chase Sapphire
+2025-09-18,123.15,Uber,Utilities,Pharmacy purchase,Needs,Credit,Citi Double Cash
+2025-09-19,161.51,Best Buy,Transport,Groceries,Needs,Credit,Wells Fargo Debit
