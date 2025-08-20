@@ -27,9 +27,20 @@ print(databases_results)
 db_cursor.execute("SELECT * FROM pythonexpense_project.expenses")
 sample_output = db_cursor.fetchall()
 print(sample_output)
-#Ingest the sample csv file that we have produced with ChatGpt:
-#path_for_expenses = input("Please provide the path for the sample csv: ")
-#df =  pd.read_csv(path_for_expenses)
-#From here, we need to select the columns we care about - for now, we don't need the notes column. We can drop it
-#df.drop('notes', axis=1, inplace=True)
-#print(df)
+
+#Now, let's consider the case where we are given new records - records that we have to then insert
+path_to_ingest = input("Please provide csv file, containing records we need to insert into our table")
+additional_records = pd.read_csv(path_to_ingest)
+#Here, we know that we need to drop the notes column - improvement: compare the schemas dynamically
+additional_records.drop('notes', axis=1, inplace=True)
+print(additional_records)
+#In order to add data to the MySQL table, the data has to be in the form of a list made up of tuples
+records_extracted = additional_records.to_records(index=False).tolist()
+#Now that we have this, we can go ahead and insert into the table
+#We need to know the column names
+column_names = tuple([x[0] for x in db_cursor.description])
+cols = ", ".join(f"`{c}`" for c in column_names)  # backtick each name
+insert_query = f"INSERT INTO pythonexpense_project.expenses ({cols}) VALUES (%s,%s,%s,%s,%s,%s,%s)"
+db_cursor.executemany(insert_query, records_extracted)
+db_connection.commit()
+print(db_cursor.rowcount, "were inserted.")
