@@ -1,0 +1,21 @@
+date,amount,merchant,category,notes,subcategory,card_type,card_name
+2025-10-01,67.15,Apple,Healthcare,Home supplies,Needs,Debit,Chase Sapphire
+2025-10-02,230.19,Lyft,Savings,Pharmacy purchase,Savings,Debit,Amex Gold
+2025-10-03,452.95,Amazon,Housing,Pharmacy purchase,Needs,Credit,Wells Fargo Debit
+2025-10-04,101.53,Hulu,Transport,Groceries,Needs,Credit,Amex Gold
+2025-10-05,496.72,Walgreens,Healthcare,Home supplies,Needs,Debit,Chase Freedom
+2025-10-06,365.9,Apple,Transport,Flight ticket,Needs,Debit,Amex Gold
+2025-10-07,466.08,Netflix,Groceries,Flight ticket,Needs,Debit,Chase Sapphire
+2025-10-08,59.19,Airbnb,Savings,Streaming service,Savings,Debit,Chase Sapphire
+2025-10-09,33.21,Delta Airlines,Food & Drink,Electronics,Wants,Debit,Citi Double Cash
+2025-10-10,491.68,Starbucks,Utilities,Dinner,Needs,Credit,Discover It
+2025-10-11,134.68,Starbucks,Housing,Hotel booking,Needs,Debit,Discover It
+2025-10-12,243.03,Airbnb,Transport,Streaming service,Needs,Debit,Wells Fargo Debit
+2025-10-13,270.49,Lyft,Entertainment,Monthly subscription,Wants,Credit,Chase Sapphire
+2025-10-14,60.75,Exxon,Entertainment,Flight ticket,Wants,Credit,Bank of America Debit
+2025-10-15,261.93,Hulu,Food & Drink,Streaming service,Wants,Credit,Citi Double Cash
+2025-10-16,152.02,Spotify,Savings,Flight ticket,Savings,Credit,Chase Sapphire
+2025-10-17,495.18,Netflix,Utilities,Hotel booking,Needs,Debit,Chase Freedom
+2025-10-18,66.13,Uber,Healthcare,Streaming service,Needs,Debit,Wells Fargo Debit
+2025-10-19,311.04,Best Buy,Shopping,Dinner,Wants,Credit,Citi Double Cash
+2025-10-20,157.68,Uber,Groceries,Streaming service,Needs,Debit,Wells Fargo Debit
