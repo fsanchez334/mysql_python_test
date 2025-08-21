@@ -29,3 +29,4 @@ The following items are potential tasks that I currently see as improvements to 
 - Develop logic to cross check the schema of the incoming data with the target schema of the table
 - Develop a second script that reads from the MySQL table as it is being updated
 - Develop logic to perform aggregations and generate gold views for data visualization software like Tableau or Power BI
+- Incorporate try and exception to make sure user input for connecting to the database is valid
