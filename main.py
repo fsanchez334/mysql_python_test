@@ -1,6 +1,7 @@
 import pandas as pd
 import mysql.connector
 import getpass
+from datatabaseConnector import DatabaseConnector
 
 def connectToDatabase():
     user = input("Please provide user to the database: ")
@@ -18,6 +19,9 @@ def connectToDatabase():
     else:
         print("Something went wrong - try again")
         return -1
+    
+if __name__ == "main":
+    #Prompor
 
 db_connection = connectToDatabase()
 db_cursor = db_connection.cursor()
