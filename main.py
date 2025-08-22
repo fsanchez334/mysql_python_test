@@ -6,13 +6,14 @@ from datatabaseConnector import DatabaseConnector
 if __name__ == "__main__":
     #Prompt the user
     print("Hello - we will connect you to the database")
-    provided_user = input("Please provide the user to connect to the database: ")
+    provided_user = getpass.getpass("Please provide the user to connect to the database: ")
     provided_password= getpass.getpass("Please provide the user's password: ")
-    provided_host = input("Please provide the host hosting the MYSQL server: ")
-    provided_port = input("Please provide the port to connect to: ")
-    
+    provided_host = getpass.getpass("Please provide the host hosting the MYSQL server: ")
+    provided_port = getpass.getpass("Please provide the port to connect to: ")
+    provided_database = getpass.getpass("Please provide the database you want to connect to: ")
+    #pythonexpense_project
     #From the provided information, create the database connection
-    db_obj= DatabaseConnector(provided_user, provided_password, provided_host, provided_port)
+    db_obj= DatabaseConnector(provided_user, provided_password, provided_host, provided_port, provided_database)
     connection_passed = db_obj.connect_to_database()
     cursor = None
     if connection_passed:
@@ -20,26 +21,16 @@ if __name__ == "__main__":
         cursor = db_obj.get_cursor()
     else:
         print("Connection failed -  please check configuration")
-        
 
+    #From here, prompt the user to provide the path to the csv that will be used to ingest into the database
+    path_to_ingest = input("Please provide the path to the csv file containing records you would like to insert into the table")
+    additional_records = pd.read_csv(path_to_ingest)
 
-#db_cursor.execute("SELECT * FROM pythonexpense_project.expenses")
-#sample_output = db_cursor.fetchall()
-#print(sample_output)
-
-#Now, let's consider the case where we are given new records - records that we have to then insert
-#path_to_ingest = input("Please provide csv file, containing records we need to insert into our table")
-#additional_records = pd.read_csv(path_to_ingest)
-#Here, we know that we need to drop the notes column - improvement: compare the schemas dynamically
-#additional_records.drop('notes', axis=1, inplace=True)
-#print(additional_records)
-#In order to add data to the MySQL table, the data has to be in the form of a list made up of tuples
-#records_extracted = additional_records.to_records(index=False).tolist()
-#Now that we have this, we can go ahead and insert into the table
-#We need to know the column names
-#column_names = tuple([x[0] for x in db_cursor.description])
-#cols = ", ".join(f"`{c}`" for c in column_names)  # backtick each name
-#insert_query = f"INSERT INTO pythonexpense_project.expenses ({cols}) VALUES (%s,%s,%s,%s,%s,%s,%s)"
-#db_cursor.executemany(insert_query, records_extracted)
-#db_connection.commit()
-#print(db_cursor.rowcount, "were inserted.")
+    #Assuming the data is clean, we have to manipulate the data
+    #In order to add data to the MySQL table, the data has to be in the form of a list made up of tuples
+    records_extracted = additional_records.to_records(index=False).tolist()
+    print(records_extracted)
+    #Now that we have this, we can go ahead and insert into the table
+    #We need to know the column names
+    #column_names = tuple([x[0] for x in cursor.description])
+    #print(column_names)
