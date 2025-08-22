@@ -3,30 +3,13 @@ import mysql.connector
 import getpass
 from datatabaseConnector import DatabaseConnector
 
-def connectToDatabase():
-    user = input("Please provide user to the database: ")
-    password = getpass.getpass("Please provide the password to connect to the database: ")
-    conn = mysql.connector.connect(
-        host="localhost",   # or "localhost", depending on your setup
-        port=3306,          # default MySQL port
-        user="{}".format(user),
-        password="{}".format(password)
-    )
-    connection_status = conn.is_connected()
-    if connection_status:
-        print("Successfully connected to the database")
-        return conn
-    else:
-        print("Something went wrong - try again")
-        return -1
-    
 if __name__ == "__main__":
     #Prompt the user
     print("Hello - we will connect you to the database")
-    provided_user = input("Please provide the user to connect to the database:")
-    provided_password= getpass.getpass("Please provid the user's password:")
-    provided_host = input("Please provide the host hosting the MYSQL server")
-    provided_port = input("Please provide the port to connect to")
+    provided_user = input("Please provide the user to connect to the database: ")
+    provided_password= getpass.getpass("Please provide the user's password: ")
+    provided_host = input("Please provide the host hosting the MYSQL server: ")
+    provided_port = input("Please provide the port to connect to: ")
     
     #From the provided information, create the database connection
     db_obj= DatabaseConnector(provided_user, provided_password, provided_host, provided_port)
@@ -38,11 +21,8 @@ if __name__ == "__main__":
     else:
         print("Connection failed -  please check configuration")
         
-#db_connection = connectToDatabase()
-#db_cursor = db_connection.cursor()
-#db_cursor.execute("SHOW DATABASES")
-#databases_results = db_cursor.fetchall()
-#print(databases_results)
+
+
 #db_cursor.execute("SELECT * FROM pythonexpense_project.expenses")
 #sample_output = db_cursor.fetchall()
 #print(sample_output)
